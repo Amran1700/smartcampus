@@ -41,8 +41,8 @@ Filter Sensors
 curl -X GET "http://localhost:8080/smartcampus/api/v1/sensors?type=CO2"
 
 Add Sensor Reading  
-curl -X POST http://localhost:8080/smartcampus/api/v1/sensors/12344/readings/ 
--H "Content-Type: application/json" 
+curl -X POST http://localhost:8080/smartcampus/api/v1/sensors/12344/readings/ \
+-H "Content-Type: application/json" \
 -d '{ "id": "5300", "timestamp": 4253749273, "value": 44.33 }'
 
 Delete Room with Sensors (Conflict Case)  
