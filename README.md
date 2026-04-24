@@ -88,8 +88,8 @@ HTTP 422 is more appropriate because the request itself is syntactically valid, 
 
 5.4
 Returning stack traces is a security risk because it exposes internal system details such as class names, file paths, frameworks, and dependencies. Attackers can use this information to identify vulnerabilities in the system. To prevent this, a CatchAllExceptionMapper is used to catch errors and return a generic error message instead of exposing internal details.
+
+
 5.5
-
-
 Using JAX-RS filters for logging is better than adding logging statements in every method because it centralises logging in one place. This reduces code duplication and ensures consistent logging across all endpoints. It also improves maintainability because logging behaviour can be changed in one location without modifying individual resource classes, supporting better separation of concerns
 
