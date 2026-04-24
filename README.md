@@ -48,6 +48,6 @@ Delete Room with Sensors (Conflict Case)
 curl -X DELETE http://localhost:8080/smartcampus/api/v1/rooms/10
 
 Invalid Sensor (422 Case)  
-curl -X POST http://localhost:8080/smartcampus/api/v1/sensors/ 
--H "Content-Type: application/json" 
+curl -X POST http://localhost:8080/smartcampus/api/v1/sensors/ \
+-H "Content-Type: application/json" \
 -d '{ "id": "222", "type": "CO2", "status": "active", "currentValue": 70.789, "roomId": "5000" }'
