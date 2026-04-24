@@ -16,7 +16,7 @@ Discovery Endpoint
 curl -X GET http://localhost:8080/smartcampus/api/v1/
 
 Create Room  
-curl -X POST http://localhost:8080/smartcampus/api/v1/rooms\
+curl -X POST http://localhost:8080/smartcampus/api/v1/rooms \
 -H "Content-Type: application/json" \
 -d '{ "id": "2001", "name": "meeting hall", "capacity": 550 }'
 
