@@ -1,5 +1,6 @@
 # Smart Campus 
-Amran Mohammed — w2066724
+Author: Amran Mohammed 
+StudentID: w2066724
 
 ## How to Run
 
@@ -15,8 +16,8 @@ Discovery Endpoint
 curl -X GET http://localhost:8080/smartcampus/api/v1/
 
 Create Room  
-curl -X POST http://localhost:8080/smartcampus/api/v1/rooms
--H "Content-Type: application/json" 
+curl -X POST http://localhost:8080/smartcampus/api/v1/rooms\
+-H "Content-Type: application/json" \
 -d '{ "id": "2001", "name": "meeting hall", "capacity": 550 }'
 
 Get All Rooms  
@@ -29,8 +30,8 @@ Delete Room
 curl -X DELETE http://localhost:8080/smartcampus/api/v1/rooms/2001
 
 Create Sensor  
-curl -X POST http://localhost:8080/smartcampus/api/v1/sensors/ 
--H "Content-Type: application/json" 
+curl -X POST http://localhost:8080/smartcampus/api/v1/sensors/ \
+-H "Content-Type: application/json" \
 -d '{ "id": "12344", "type": "CO2", "status": "active", "currentValue": 30.889, "roomId": "2001" }'
 
 Get All Sensors  
